@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/soruuretici"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arakplan"
+    android:orientation="horizontal"
+    tools:context=".anaSayfa">
+
+
+    <ImageButton
+        android:id="@+id/hesapMakinesi"
+        android:layout_width="155dp"
+        android:layout_height="200dp"
+        android:background="@null"
+        android:backgroundTintMode="add"
+        android:contentDescription="Burada Dört İşlem Yapmak İçin"
+        android:hint="Hesap Makinesi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384"
+        app:srcCompat="@drawable/hesap_makinesi" />
+
+    <ImageButton
+        android:id="@+id/soruUretici"
+        android:layout_width="141dp"
+        android:layout_height="149dp"
+        android:background="@null"
+        android:backgroundTintMode="add"
+        android:contentDescription="Burada Dört İşlem Yapmak İçin"
+        android:hint="Hesap Makinesi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402"
+        app:srcCompat="@drawable/soru_uretici" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="215dp"
+        android:layout_height="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Geliştiriçi"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="643dp" />
+
+        <TextView
+            android:id="@+id/webSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Web Sayfası"
+            android:textColor="#FFC107"
+            android:textColorHint="#FFC107"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="188dp"
+            tools:layout_editor_absoluteY="643dp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049"
+        app:srcCompat="@drawable/arkaplanlogo" />
+
+    <ImageButton
+        android:id="@+id/cizimalanicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:backgroundTintMode="add"
+        android:contentDescription="Burada Dört İşlem Yapmak İçin"
+        android:hint="Hesap Makinesi"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hesapMakinesi"
+        app:layout_constraintVertical_bias="0.07"
+        app:srcCompat="@drawable/cizimalanicon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

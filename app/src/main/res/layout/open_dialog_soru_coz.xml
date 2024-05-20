@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:background="@drawable/arkaplanbar">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="220dp"
+            android:text="Soru çöz"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dialoggeri"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.063" />
+
+        <ImageButton
+            android:id="@+id/dialogbasla"
+            android:layout_width="113dp"
+            android:layout_height="118dp"
+            android:background="@null"
+            android:contentDescription="Bu sayı girisi sağlıyor"
+            android:hint="Sıfır sayısı"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.983"
+            app:srcCompat="@drawable/dialogbasla" />
+
+        <ImageButton
+            android:id="@+id/dialoggeri"
+            android:layout_width="64dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="4dp"
+            android:background="@null"
+            android:contentDescription="Bu sayı girisi sağlıyor"
+            android:hint="Sıfır sayısı"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.013"
+            app:srcCompat="@drawable/dialoggeri" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/dialogbasla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.554"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.038"
+            app:srcCompat="@drawable/dialogenyuksekpuan" />
+
+        <Spinner
+            android:id="@+id/dialogbasamakSecbir"
+            android:layout_width="185dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintBottom_toTopOf="@+id/dialogbasla"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:layout_constraintVertical_bias="0.857" />
+
+        <Spinner
+            android:id="@+id/dialogbasamksecIki"
+            android:layout_width="164dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintBottom_toTopOf="@+id/dialogbasla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.948"
+            app:layout_constraintStart_toEndOf="@+id/dialogbasamakSecbir"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:layout_constraintVertical_bias="0.857" />
+
+        <TextView
+            android:id="@+id/enyuksekskorum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/dialogbasla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:layout_constraintVertical_bias="0.163" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+

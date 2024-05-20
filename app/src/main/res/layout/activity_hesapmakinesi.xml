@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arakplan"
+    tools:context=".hesapmakinesi">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="220dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/arkaplanlogo" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="361dp"
+        android:layout_height="163dp"
+        android:layout_marginBottom="432dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sonuc_goster_hesap" />
+
+    <TextView
+        android:id="@+id/sonucgoster"
+        android:layout_width="323dp"
+        android:layout_height="43dp"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/islemkisim"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/islemkisim"
+        android:layout_width="319dp"
+        android:layout_height="54dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.757" />
+
+    <LinearLayout
+        android:layout_width="283dp"
+        android:layout_height="392dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:layout_width="214dp"
+            android:layout_height="385dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.367"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.929">
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="211dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.255"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageButton
+                    android:id="@+id/yeditusu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:contentDescription="Bu sayı girisi sağlıyor"
+                    android:hint="Yedi sayısı"
+                    app:srcCompat="@drawable/yeditusu" />
+
+                <ImageButton
+                    android:id="@+id/sekiztusu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:contentDescription="Bu sayı girisi sağlıyor"
+                    android:hint="Sekiz sayısı"
+                    app:srcCompat="@drawable/sekiztusu"
+                    tools:layout_editor_absoluteX="-6dp"
+                    tools:layout_editor_absoluteY="442dp" />
+
+                <ImageButton
+                    android:id="@+id/dokuztusu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:contentDescription="Bu sayı girisi sağlıyor"
+                    android:hint="Dokuz sayısı"
+                    app:srcCompat="@drawable/dokuztusu" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="211dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.257"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageButton
+                    android:id="@+id/dorttussu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:contentDescription="Bu sayı girisi sağlıyor"
+                    android:hint="Dört sayısı"
+                    app:srcCompat="@drawable/dorttussu" />
+
+                <ImageButton
+                    android:id="@+id/bestusu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:contentDescription="Bu sayı girisi sağlıyor"
+                    android:hint="Beş sayısı"
+                    app:srcCompat="@drawable/bestusu"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="386dp" />
+
+                <ImageButton
+                    android:id="@+id/altitusu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:contentDescription="Bu sayı girisi sağlıyor"
+                    android:hint="Altı sayısı"
+                    app:srcCompat="@drawable/altitusu" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="210dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.255"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.477">
+
+                <ImageButton
+                    android:id="@+id/birtusu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:contentDescription="Bu sayı girisi sağlıyor"
+                    android:hint="Bir sayısı"
+                    app:srcCompat="@drawable/birtusu"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="475dp" />
+
+                <ImageButton
+                    android:id="@+id/ikitusu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:contentDescription="Bu sayı girisi sağlıyor"
+                    android:hint="İki sayısı"
+                    app:srcCompat="@drawable/ikitusu" />
+
+                <ImageButton
+                    android:id="@+id/uctusu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:contentDescription="Bu sayı girisi sağlıyor"
+                    android:hint="Üc sayısı"
+                    app:srcCompat="@drawable/uctusu" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="211dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.258"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageButton
+                    android:id="@+id/noktatusu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:contentDescription="Bu sayı girisi sağlıyor"
+                    android:hint="Nokta sayısı"
+                    app:srcCompat="@drawable/noktatusu"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="564dp" />
+
+                <ImageButton
+                    android:id="@+id/sifirtusu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:contentDescription="Bu sayı girisi sağlıyor"
+                    android:hint="Sıfır sayısı"
+                    app:srcCompat="@drawable/sifirtusu"
+                    tools:layout_editor_absoluteX="110dp"
+                    tools:layout_editor_absoluteY="564dp" />
+
+                <ImageButton
+                    android:id="@+id/vurgultusu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="@null"
+                    android:contentDescription="Bu sayı girisi sağlıyor"
+                    android:hint="Virgül sayısı"
+                    app:srcCompat="@drawable/vurgultusu"
+                    tools:layout_editor_absoluteX="204dp"
+                    tools:layout_editor_absoluteY="564dp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/siltusu"
+                android:layout_width="203dp"
+                android:layout_height="63dp"
+                android:background="@null"
+                android:contentDescription="Bu sayı girisi sağlıyor"
+                android:hint="Esitir sayısı"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+                app:srcCompat="@drawable/siltusu"
+                tools:layout_editor_absoluteX="52dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="69dp"
+            android:layout_height="385dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="286dp"
+            tools:layout_editor_absoluteY="322dp">
+
+            <ImageButton
+                android:id="@+id/toplatusu"
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:background="@null"
+                android:contentDescription="Bu sayı girisi sağlıyor"
+                android:hint="Toplama sayısı"
+                app:srcCompat="@drawable/toplatusu"
+                tools:layout_editor_absoluteX="301dp"
+                tools:layout_editor_absoluteY="311dp" />
+
+            <ImageButton
+                android:id="@+id/cikartusu"
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:background="@null"
+                android:contentDescription="Bu sayı girisi sağlıyor"
+                android:hint="Çıkarma sayısı"
+                app:srcCompat="@drawable/cikartusu"
+                tools:layout_editor_absoluteX="301dp"
+                tools:layout_editor_absoluteY="386dp" />
+
+            <ImageButton
+                android:id="@+id/carptusu"
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:background="@null"
+                android:contentDescription="Bu sayı girisi sağlıyor"
+                android:hint="Çarpma sayısı"
+                app:srcCompat="@drawable/carptusu"
+                tools:layout_editor_absoluteX="301dp"
+                tools:layout_editor_absoluteY="475dp" />
+
+            <ImageButton
+                android:id="@+id/boltusu"
+                android:layout_width="wrap_content"
+                android:layout_height="76dp"
+                android:background="@null"
+                android:contentDescription="Bu sayı girisi sağlıyor"
+                android:hint="Bölme sayısı"
+                app:srcCompat="@drawable/boltusu"
+                tools:layout_editor_absoluteX="301dp"
+                tools:layout_editor_absoluteY="564dp" />
+
+            <ImageButton
+                android:id="@+id/esitirtusu"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:background="@null"
+                android:contentDescription="Bu sayı girisi sağlıyor"
+                android:hint="Silme sayısı"
+                app:srcCompat="@drawable/esitirtusu"
+                tools:layout_editor_absoluteX="301dp"
+                tools:layout_editor_absoluteY="643dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/sesackapa"
+        android:layout_width="87dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <ImageView
+        android:id="@+id/sesiconhesapmakinesi"
+        android:layout_width="36dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sesackapa"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="@+id/sesackapa"
+        app:layout_constraintTop_toTopOf="@+id/sesackapa"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@drawable/seskapali" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

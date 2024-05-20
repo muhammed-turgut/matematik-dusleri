@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Matemetikdusleri" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryVariant">@color/customColor</item>
+    </style>
+    <style name="SplashScreen" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimaryVariant">@color/customColor</item>
+    </style>
+
+    <style name="Theme.Matemetikdusleri" parent="Base.Theme.Matemetikdusleri" />
+</resources>
